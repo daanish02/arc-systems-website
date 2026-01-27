@@ -93,10 +93,20 @@ To test how the site behaves in the SWA environment locally:
 
 ## Troubleshooting
 
-- **Build Failures**: Check the "Actions" tab in your GitHub repository for detailed error logs.
-- **Next.js v16+**: Since we are using Next.js 16 (Canary/Latest), ensure the Azure build environment uses the correct Node.js version. You can specify this in `package.json`:
-  ```json
-  "engines": {
-    "node": ">=20.0.0"
-  }
-  ```
+### "BadRequest: No matching Static Web App was found or the api key was invalid"
+This is the most common error. It means the `AZURE_STATIC_WEB_APPS_API_TOKEN` in your GitHub Secrets does not match the token for the resource in Azure.
+
+1.  Go to the Azure Portal > Your SWA > **Manage deployment token**.
+2.  In GitHub > Settings > Secrets > Actions, edit the corresponding secret.
+3.  **Note**: If you have multiple workflow files (e.g., `ambitious-water` and `thankful-wave`), check which secret each one uses.
+
+### "Could not find build output at .next"
+If the build fails with this error, ensure your `output_location` in the YAML workflow is set to `.next`.
+- **Next.js**: `.next`
+- **Standard HTML**: `build` or `public`
+
+### Multiple Workflow Files
+If Azure creates multiple `.yml` files in `.github/workflows/`, it means multiple Static Web Apps were created. You should:
+1.  Identify which one is correctly linked to your domain.
+2.  Delete the unused SWA resource in the Azure Portal.
+3.  Delete the corresponding `.yml` file in your repository.
