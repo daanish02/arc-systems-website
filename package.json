@@ -1,0 +1,43 @@
+{
+  "name": "arc-systems-website",
+  "version": "1.0.0",
+  "description": "Arc Systems - Engineering Intelligent Systems. Professional AI/ML and software development services.",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "AI",
+    "ML",
+    "software-development",
+    "dubai",
+    "nextjs"
+  ],
+  "author": "Arc Systems",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.1.1",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^25.0.8",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.1",
+    "gray-matter": "^4.0.3",
+    "next": "^16.1.1",
+    "next-mdx-remote": "^5.0.0",
+    "postcss": "^8.5.6",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-phone-number-input": "^3.4.14",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
+  }
+}

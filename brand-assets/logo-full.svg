@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 15 190 80">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; }
+      .title { font-size: 42px; font-weight: bold; fill: #111111; }
+      .subtitle { font-size: 20px; font-weight: 500; fill: #555555; letter-spacing: 3px; text-transform: uppercase; }
+    </style>
+  </defs>
+  
+  <!-- Icon: Geometric A -->
+  <g transform="translate(20, 15)">
+      <!-- Main A shape -->
+      <path d="M 10 70 L 35 10 L 60 70" fill="none" stroke="#111111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <!-- Red Accent Curve -->
+      <path d="M 22 52 Q 35 38 48 52" fill="none" stroke="#E50914" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Text Stack -->
+  <g transform="translate(100, 15)">
+      <text x="0" y="45" class="text title">Arc</text>
+      <text x="2" y="72" class="text subtitle">Systems</text>
+  </g>
+</svg>

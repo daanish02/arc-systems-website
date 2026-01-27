@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-space: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    --font-jetbrains-mono: 'JetBrains Mono', 'Courier New', monospace;
+  }
+
+  body {
+    @apply bg-black text-white antialiased;
+    background-color: #000000;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 md:px-8 lg:px-12;
+  }
+}
+
+/* Custom Select Dropdown Styling */
+select option {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  padding: 12px;
+}
+
+/* Phone Input Styling */
+.phone-input-dark .PhoneInputInput {
+  background-color: #000000;
+  border: 1px solid #222222;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  color: #f0f0f0;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.phone-input-dark .PhoneInputInput:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.phone-input-dark .PhoneInputCountrySelect {
+  background-color: #000000;
+  border: 1px solid #222222;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  color: #f0f0f0;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.phone-input-dark .PhoneInputCountrySelect:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.phone-input-dark .PhoneInputCountryIcon {
+  margin-right: 0.5rem;
+}
+
+.phone-input-dark .PhoneInputCountrySelectArrow {
+  color: #f0f0f0;
+  opacity: 0.7;
+}
+
+
