@@ -31,6 +31,8 @@ jobs:
           output_location: ".next"
         env:
           NODE_VERSION: "20.x"
+          NEXT_PUBLIC_GOOGLE_SHEETS_URL: ${{ secrets.NEXT_PUBLIC_GOOGLE_SHEETS_URL }}
+          NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

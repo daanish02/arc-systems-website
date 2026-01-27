@@ -48,7 +48,18 @@ When prompted for build presets:
 - **Api location**: (Leave blank unless you have a dedicated `/api` folder outside of Next.js)
 - **Output location**: `.next` (Next.js manages this automatically)
 
-### 3. Review and Create
+### 3. Environment Variables (Secret Keys)
+
+Since your website uses **Google Sheets** and **Google Analytics**, you must add these keys to Azure for the production site to work:
+
+1.  Open your **Static Web App** in the Azure Portal.
+2.  Go to **Configuration** in the left sidebar.
+3.  Add the following **Application settings** (copy values from your `.env.local`):
+    - `NEXT_PUBLIC_GOOGLE_SHEETS_URL`
+    - `NEXT_PUBLIC_GA_ID` (If using Analytics)
+4.  Click **Save**. The app will restart with the new configuration.
+
+### 4. Review and Create
 
 Click **Review + create** and then **Create**. Azure will now set up a GitHub Actions workflow in your repository.
 
