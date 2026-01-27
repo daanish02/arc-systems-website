@@ -1,6 +1,9 @@
 {
   "name": "arc-systems-website",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "description": "Arc Systems - Engineering Intelligent Systems. Professional AI/ML and software development services.",
   "private": true,
   "scripts": {
