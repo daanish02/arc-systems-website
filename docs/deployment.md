@@ -97,8 +97,8 @@ To test how the site behaves in the SWA environment locally:
 This is the most common error. It means the `AZURE_STATIC_WEB_APPS_API_TOKEN` in your GitHub Secrets does not match the token for the resource in Azure.
 
 1.  Go to the Azure Portal > Your SWA > **Manage deployment token**.
-2.  In GitHub > Settings > Secrets > Actions, edit the corresponding secret.
-3.  **Note**: If you have multiple workflow files (e.g., `ambitious-water` and `thankful-wave`), check which secret each one uses.
+2.  In GitHub > Settings > Secrets > Actions, edit or create a secret named `AZURE_STATIC_WEB_APPS_API_TOKEN`.
+3.  Ensure the name in your `.github/workflows/azure-static-web-apps.yml` matches exactly.
 
 ### "Could not find build output at .next"
 If the build fails with this error, ensure your `output_location` in the YAML workflow is set to `.next`.
@@ -106,7 +106,5 @@ If the build fails with this error, ensure your `output_location` in the YAML wo
 - **Standard HTML**: `build` or `public`
 
 ### Multiple Workflow Files
-If Azure creates multiple `.yml` files in `.github/workflows/`, it means multiple Static Web Apps were created. You should:
-1.  Identify which one is correctly linked to your domain.
-2.  Delete the unused SWA resource in the Azure Portal.
-3.  Delete the corresponding `.yml` file in your repository.
+I have consolidated the deployment into a single `.github/workflows/azure-static-web-apps.yml`. 
+- **Recommendation**: Delete any other `.yml` files in the `.github/workflows/` directory to avoid redundant builds and confusion.
