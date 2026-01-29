@@ -1,7 +1,7 @@
 /**
  * Why Arc Systems Differentiators
  * 
- * Four key differentiators displayed on homepage.
+ * Five key differentiators displayed on homepage.
  * Keep descriptions uniform in length (approx 15-20 words).
  */
 
@@ -12,23 +12,33 @@ export interface Differentiator {
 
 export const differentiators: Differentiator[] = [
   {
-    title: "Production-Grade AI Systems",
+    title: "Deep AI & ML Expertise",
     description:
-      "We build AI systems designed for real-world deployment. Every solution is architected with production requirements in mind from day one.",
+      "Years of hands-on experience in machine learning and data science before the LLM boom. We understand the fundamentals, not just the trends.",
   },
   {
-    title: "End-to-End ML Capabilities",
+    title: "Data Science Foundation",
     description:
-      "From data engineering and model development to deployment and monitoring, we handle the complete ML lifecycle. Comprehensive expertise across the entire stack.",
+      "Strong analytics, statistical modeling, and ML background means solutions built on solid technical foundations, not just API wrappers.",
   },
   {
-    title: "Proven Technical Excellence",
+    title: "Real-World Experience",
     description:
-      "Deep expertise in machine learning, statistical modeling, and software engineering. We deliver solutions backed by rigorous methodology and industry best practices.",
+      "Experience with actual production systems: predictions, classifications, recommendations, object detection, and intelligent automations.",
   },
   {
-    title: "Business-First Approach",
+    title: "Practical AI Implementation",
     description:
-      "Technology serves business objectives. We focus on measurable outcomes and ROI, ensuring AI investments deliver tangible value to your organization.",
+      "Focus on solving real business problems with AI/ML, not chasing buzzwords. Workflow automations, agentic AI, and custom models.",
+  },
+  {
+    title: "Transparent & Honest",
+    description:
+      "Clear technical discussions, realistic timelines, and honest assessments. We tell you what's possible and what's not.",
+  },
+  {
+    title: "Dubai-Based, Global Standards",
+    description:
+      "Local presence with international quality. GST timezone coverage for MENA, Europe, and Asia, with US East Coast availability.",
   },
 ];

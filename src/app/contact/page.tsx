@@ -415,7 +415,7 @@ export default function ContactPage() {
           </p>
 
           <div className="flex justify-center sm:justify-start">
-            <Button variant="primary" size="lg" href="mailto:hello@archsystems.tech">
+            <Button variant="primary" size="lg" href="mailto:hello@arcsystems.tech">
               Schedule a Discovery Call
             </Button>
           </div>
@@ -441,7 +441,7 @@ export default function ContactPage() {
         <div className="text-center">
           <h2 className="mb-6">Let's build something innovative together</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="primary" size="lg" href="mailto:hello@archsystems.tech">
+            <Button variant="primary" size="lg" href="mailto:hello@arcsystems.tech">
               Let's Discuss
             </Button>
             <Button variant="outline" size="lg" href="/services">

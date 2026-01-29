@@ -7,7 +7,7 @@ export const siteConfig = {
   company: {
     name: "Arc Systems",
     tagline: "Engineering Intelligent Systems",
-    email: "hello@archsystems.tech",
+    email: "hello@arcsystems.tech",
     phone: "+971-50-751-1002", // Update with your WhatsApp number
     whatsappNumber: "971507511002", // Format: country code + number (no + or spaces)
     location: "Dubai, United Arab Emirates",
@@ -40,7 +40,7 @@ export const siteConfig = {
   },
 
   urls: {
-    website: "https://archsystems.tech",
+    website: "https://arcsystems.tech",
     portfolio: "/projects",
     contact: "/contact",
   },

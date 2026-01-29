@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_AE",
-    url: "https://archsystems.tech",
+    url: "https://arcsystems.tech",
     title: "Arc Systems - Engineering Intelligent Systems",
     description:
       "Expert AI/ML solutions and full-stack development services in Dubai",

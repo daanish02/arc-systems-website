@@ -22,7 +22,7 @@ export interface Service {
 export const services: Service[] = [
   {
     id: "ai-chatbots-automation",
-    title: "AI Chatbots & Automation",
+    title: "AI Chatbots & Intelligent Automation",
     shortDescription:
       "Smart chatbots, AI agents, workflow automations, LLM integration, and RAG systems for customer support and business processes.",
     overview:
@@ -32,11 +32,11 @@ export const services: Service[] = [
       "LLM integration (ChatGPT, Claude, custom GPTs)",
       "RAG systems and knowledge bases",
       "Intelligent AI agents and multi-agent systems",
-      "Workflow automations using agentic AI",
+      "Workflow automations with and without agentic AI",
       "Natural language processing (NLP) solutions",
       "Conversational interfaces for apps",
       "Document Q&A and semantic search",
-      "Multi-modal AI systems",
+      "AIOps and LLMOps",
     ],
     idealFor: [
       "Customer support automation",
@@ -48,7 +48,7 @@ export const services: Service[] = [
   },
   {
     id: "machine-learning-predictions",
-    title: "ML & Predictive Analytics",
+    title: "Machine Learning & Predictive Models",
     shortDescription:
       "Custom ML models, predictions, classifications, recommendation systems, and forecasting trained on your business data.",
     overview:
@@ -62,7 +62,7 @@ export const services: Service[] = [
       "Anomaly detection systems",
       "Time series forecasting",
       "Feature engineering for ML models",
-      "Production-ready ML systems",
+      "MLOps and model deployment",
     ],
     idealFor: [
       "Forecasting sales, demand, or trends",
@@ -73,34 +73,34 @@ export const services: Service[] = [
     ],
   },
   {
-    id: "mvp-prototyping",
-    title: "MVP & Prototyping",
+    id: "computer-vision",
+    title: "Computer Vision & Image Recognition",
     shortDescription:
-      "Rapid prototyping and MVP development to validate your ideas quickly. Production-ready systems built in 4-8 weeks for startups and innovation teams.",
+      "Object detection, image classification, facial recognition, and visual quality control systems for automation and security.",
     overview:
-      "Turn your vision into reality fast. We specialize in building minimum viable products and prototypes that help you validate market fit, secure funding, or test new concepts.",
+      "Enable your systems to see and understand visual content. From security cameras to quality control, we build computer vision solutions that automate visual tasks.",
     whatWeBuild: [
-      "Minimum viable product (MVP) development",
-      "Rapid prototyping (4-8 weeks)",
-      "Technical feasibility studies",
-      "Proof of concept development",
-      "AI-powered MVPs and prototypes",
-      "Web and mobile app MVPs",
-      "System architecture and design",
-      "Technology stack recommendations",
-      "Investor-ready demos and prototypes",
+      "Object detection and tracking",
+      "Image classification and recognition",
+      "Facial recognition systems",
+      "Visual quality control and defect detection",
+      "OCR (Optical Character Recognition)",
+      "Video analysis and processing",
+      "Real-time camera feed analysis",
+      "Medical image analysis",
+      "License plate recognition",
     ],
     idealFor: [
-      "Startups validating product-market fit",
-      "Companies testing new business ideas",
-      "Securing seed or Series A funding",
-      "Rapid experimentation and iteration",
-      "Time-sensitive market opportunities",
+      "Manufacturing quality control",
+      "Security and surveillance systems",
+      "Retail and inventory management",
+      "Healthcare and medical imaging",
+      "Automating visual inspection tasks",
     ],
   },
   {
     id: "data-analytics",
-    title: "Data Mining & BI",
+    title: "Data Analytics & Business Intelligence",
     shortDescription:
       "Transform raw data into insights with custom dashboards, reports, statistical analysis, A/B testing, and data visualization.",
     overview:
