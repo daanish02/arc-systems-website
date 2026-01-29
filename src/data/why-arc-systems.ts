@@ -1,7 +1,7 @@
 /**
  * Why Arc Systems Differentiators
  * 
- * Five key differentiators displayed on homepage.
+ * Four key differentiators displayed on homepage.
  * Keep descriptions uniform in length (approx 15-20 words).
  */
 
@@ -12,33 +12,23 @@ export interface Differentiator {
 
 export const differentiators: Differentiator[] = [
   {
-    title: "Deep AI & ML Expertise",
+    title: "Production-Grade AI Systems",
     description:
-      "Years of hands-on experience in machine learning and data science before the LLM boom. We understand the fundamentals, not just the trends.",
+      "We build AI systems designed for real-world deployment. Every solution is architected with production requirements in mind from day one.",
   },
   {
-    title: "Data Science Foundation",
+    title: "End-to-End ML Capabilities",
     description:
-      "Strong analytics, statistical modeling, and ML background means solutions built on solid technical foundations, not just API wrappers.",
+      "From data engineering and model development to deployment and monitoring, we handle the complete ML lifecycle. Comprehensive expertise across the entire stack.",
   },
   {
-    title: "Real-World Experience",
+    title: "Proven Technical Excellence",
     description:
-      "Experience with actual production systems: predictions, classifications, recommendations, object detection, and intelligent automations.",
+      "Deep expertise in machine learning, statistical modeling, and software engineering. We deliver solutions backed by rigorous methodology and industry best practices.",
   },
   {
-    title: "Practical AI Implementation",
+    title: "Business-First Approach",
     description:
-      "Focus on solving real business problems with AI/ML, not chasing buzzwords. Workflow automations, agentic AI, and custom models.",
-  },
-  {
-    title: "Transparent & Honest",
-    description:
-      "Clear technical discussions, realistic timelines, and honest assessments. We tell you what's possible and what's not.",
-  },
-  {
-    title: "Dubai-Based, Global Standards",
-    description:
-      "Local presence with international quality. GST timezone coverage for MENA, Europe, and Asia, with US East Coast availability.",
+      "Technology serves business objectives. We focus on measurable outcomes and ROI, ensuring AI investments deliver tangible value to your organization.",
   },
 ];
